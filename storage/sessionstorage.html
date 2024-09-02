@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <script>
+  if (typeof(Storage) !=='undefined'){
+    //sessionStorage
+    let arr=['a','b']
+    sessionStorage.setItem('arr',JSON.stringify(arr))
+    sesstionStorage.getItem(JSON.parse('arr'))
+  }
+ </script>
+</body>
+</html>
+
+https://www.youtube.com/watch?v=nmLwQyWzkXU
+브라우저 탭이 닫히면 휘발
+
+배열을 가져오고 싶으면 저장할때 Json.stringify한후 ,불러올때 Json.parse
