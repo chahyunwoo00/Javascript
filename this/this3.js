@@ -2,7 +2,7 @@
 const object={
   name:'별코딩',
   main:function(){
-    console.log(1)
+    console.log(this)
   },
 }
 
