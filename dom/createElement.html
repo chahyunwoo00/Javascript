@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="push">눌러</button>
+  <div id="area"></div>
+  <script>
+    const button=document.getElementById('push')
+    const div=document.getElementById('area')
+
+    button.addEventListener('click',function(){
+      console.log('div 생성 중')
+      const newDiv=document.createElement('div')
+      
+      newDiv.style.backgroundColor='red'
+      newDiv.style.width='200px'
+      newDiv.style.height='200px'
+      
+      div.appendChild(newDiv)
+    })
+  </script>
+</body>
+</html>
+
+append vs appendChild
+append:문자열이랑 요소 둘다 인자로 가능,반환값 없음
+appendChild:요소만 인자로 가능,반환값 존재

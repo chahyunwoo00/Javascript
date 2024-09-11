@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+</head>
+<body>
+
+<script>
+    // Flask 서버에서 JSON 데이터를 가져오는 함수
+    fetch('http://127.0.0.1:5000/api/items')
+        .then(response => response.json())  // 응답을 JSON으로 변환
+        .then(data => {
+            console.log('Items:', data);  // JSON 데이터를 콘솔에 출력
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+
+</body>
+</html>

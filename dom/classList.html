@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .text{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <h1>실험용 텍스트</h1>
+  <button id="add">add</button>
+  <button id="remove">remove</button>
+  <button id="toggle">toggle</button>
+  
+  <script>
+    const h1=document.querySelector('h1')
+    const addBtn=document.querySelector('#add')
+    const removeBtn=document.querySelector('#remove')
+    const toggleBtn=document.querySelector('#toggle')
+
+    //console.log(h1.classList)
+
+    addBtn.addEventListener('click',function(){
+      h1.classList.add('text')
+    })
+    removeBtn.addEventListener('click',function(){
+      h1.classList.remove('text')
+    })
+    toggleBtn.addEventListener('click',function(){
+      h1.classList.toggle('text')
+    })//있으면 제거하고 없으면 만든다라는 뜻
+  </script>
+</body>
+</html>
+classList는 요소로부터 클래스 콜렉션을 반환하는 읽기 전용 속성이다.
